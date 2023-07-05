@@ -1,0 +1,5 @@
+server.port: 19999
+
+grpc:
+  server:
+    port: 20000

@@ -1,0 +1,21 @@
+syntax = "proto3";
+package de.testservice.grpc;
+option java_multiple_files = true;
+
+message TestRequest {
+
+  bool field = 1;
+
+}
+
+message TestResponse {
+
+  bool field = 1;
+
+}
+
+service TestService {
+
+  rpc testRequest (TestRequest) returns (TestResponse);
+
+}
